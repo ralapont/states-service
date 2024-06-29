@@ -2,7 +2,6 @@ package com.example.states.mappers;
 
 import com.example.states.model.output.StateResponseDto;
 import com.example.states.util.BuildDataTest;
-import lombok.AllArgsConstructor;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

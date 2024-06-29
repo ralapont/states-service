@@ -64,8 +64,8 @@ public class StateServiceTest {
 
         when(stateRepository.findById("AT")).thenReturn(Optional.empty());
 
-        StateNotFoundException thrown = assertThrows(StateNotFoundException.class, () -> {
-            StateResponseDto state = stateService.getState("AT");
+        assertThrows(StateNotFoundException.class, () -> {
+            stateService.getState("AT");
         }, "State with id AT not found");
 
     }

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class ConvertDtoResponseEntity {
 
-    private final ModelMapper modelMapper;
+    private ModelMapper modelMapper;
 
     public StateResponseDto mapperEntityToDto(StateEntity stateEntity) {
         return modelMapper.map(stateEntity, StateResponseDto.class);
